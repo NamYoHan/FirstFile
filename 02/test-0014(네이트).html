@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        #accent{ padding: 10px;
+            border: 1px solid #000;
+            width: 40px;
+            height: 40px;}
+        
+
+        ul {
+            list-style: none;
+            list-style-type: none;
+            list-style-position: inside;
+        }
+
+        body {
+            border position: absolute;
+            left: 100px;
+            right: 50px;
+        }
+
+        img {
+           
+        }
+        input[type=text]
+        {
+            width: 200px;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+        input[type=button]{width: 500px; height: 50px}
+      div{padding: 10px 40px  900px 300px ;}
+    </style>
+    <h1>nate</h1>
+
+</head>
+
+<body>
+<div>
+    <h3>휴대폰 인증을 진행해 주세요.</h3>
+    휴대폰 번호는 아이디/비밀번호 찾기에 사용됩니다.<br>
+    인증번호 받기 전 보안 문자를 입력해 주세요
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <ul class="liststy">
+        <small>그림문자 또는 음성문자</small>
+        <li>
+                <img class ="accent" src="html_이미지링크/check_word.png">
+                <img class ="accent" src="html_이미지링크/reload_btn.png">
+                <img class ="accent" src="html_이미지링크/volume_btn.png">
+            <br>
+            <label for="img"></label>
+            <input type="text" id="img" placeholder="그림문자 또는 음성문자 입력">
+        </li>
+        <br>
+      
+        <b>휴대폰</b>
+        <li>
+            <label for ="korea(82)"></label>
+            <select id="korea(82)">
+                <option value="korea" selected>Korea(82)</option>
+            </select> <br>
+            <label for="tel"></label>
+            <input type="text" id="tel" 
+            placeholder="-없이 숫자만 입력">
+            <input type="submit" value="인증번호 받기">
+        </li>
+       
+        <br>
+        <b>인증 번호</b>
+        <li>
+            <label for="ok"></label>
+            <input type="text" id="ok" 
+            placeholder="인증번호(10분동안 유효)">
+            <input type="submit" value="인증하기">
+        </li>
+       
+    </ul>
+    <form><input type="button" value="다음" onclick="www.sss.open('notice.html')">
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <button onclick= "inntext()">innerText로 표시하기</button>
+    <button onclick= "innhtml()">innerHTML로 표시하기</button>
+    <h1>현재시각</h1>
+    <div id="current"></div>
+
+    <script>
+        var now = new Date();
+        function inntext(){
+            document.getElementById("current").inntext = now;
+        }
+        function innhtml(){
+            document.getElementById("current").innhtml = "<em>"+now+"</em>";
+        }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 양꼬치 10인분을 먹으면 음료가서비스 -->
+    <!-- 양꼬치 1인분에 12,000원 음료수2,000원 -->
+    <!-- 양꼬치 n인분 음료수 k개 먹었다면 총 얼마 지불하는지 -->
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("양꼬치 먹은 인분(최대 1000인분까지)"));
+        var k = parseInt(prompt("음료수 먹은갯수(최대 1000개)"));
+        var service = n / 10;
+
+
+        if (n >= 0 && n < 1000) {
+            if (k >= 0 && k < 1000) {
+                document.write()
+
+                document.write("양꼬치"+n+"인분과 음료수"+k+"개를 시켜서비스로 음료수를"+service+"개 받아 총"+
+                
+                n * 12000 + "+" + (k * 2000) +"-"+(service*2000)+"="
+                +((n*12000)+(k*2000)+(service*-2000))
+                );
+
+
+
+            }
+            else
+            alert("매진입니다.")
+        
+
+        }
+        else
+            alert("매진입니다")
+
+
+    </script>
+</body>
+
+</html>

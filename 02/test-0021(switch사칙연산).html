@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        var tpm = prompt("1.덧셈 2.뺄셈 3.곱셈 4.나눗셈");
+        var x = parseInt(prompt("임의의 숫자를 입력해 주세요"));
+        var y = parseInt(prompt("임의의 숫자를 입력해 주세요"));
+        var sum = x+y ;
+        var minus = x-y ;
+        var multiple = x*y ;
+        var devide = x/y ;
+
+        
+
+        switch (tpm) {
+            case "1": document.write("덧셈" + x + "+" + y + "="+sum)
+
+                break;
+
+            case "2": document.write("뺄셈" + x + "-" + y + "=" +minus)
+
+                break;
+            case "3": document.write("곱셈" + x + "*" + y + "="+multipl)
+
+                break;
+            case "4": document.write("나눗셈" + x + "/" + y + "="+devide)
+
+                break;
+
+
+
+
+
+            default: alert("잘못 입력했습니다.")
+                break;
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

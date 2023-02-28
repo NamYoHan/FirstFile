@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <button class="btn_test" value="1" onclick="GetBtnValue(this.value)">1</button>
+    <button class="btn_test" value="2" onclick="GetBtnValue(this.value)">2</button>
+    <button class="btn_test" value="3" onclick="GetBtnValue(this.value)">3</button>
+    <button class="btn_test" value="4" onclick="GetBtnValue(this.value)">4</button>
+    <button class="btn_test" value="5" onclick="GetBtnValue(this.value)">5</button>
+    <button class="btn_test" value="6" onclick="GetBtnValue(this.value)">6</button>
+    <button class="btn_test" value="7" onclick="GetBtnValue(this.value)">7</button>
+    <button class="btn_test" value="8" onclick="GetBtnValue(this.value)">8</button>
+
+
+    <div>
+        <p id="GugudanHead"></p>
+        <p id="_Data"></p>
+    </div>
+    <script>
+       
+
+        //구구단 헤드 변수에 구구단헤드 아이디 넣기
+        var _GugudanHead = document.getElementById("GugudanHead");
+        //구구단 내용 변수에 데이터 아이디넣기
+        var _Gugudan = document.getElementById("_Data");
+        //변수 dan과 tmp 을 전체변수
+        var dan;
+        var _tmp;
+
+
+
+        //버튼을 클릭했을 시 작용하는 함수
+        function GetBtnValue(GetValue) {
+            //함수에 로그에 GetValue를 가져온다
+
+            _tmp = GetValue;           
+
+            ShowGugudan();
+        }
+
+
+        
+
+        function ShowGugudan() {
+            _GugudanHead.innerText = ""
+            _Gugudan.innerText = ""
+            _GugudanHead.innerText = _tmp + "단"
+            _Gugudan
+            for (var i = 1; i < 9; i++) {
+                _Gugudan.innerText += _tmp + "X" + i + "=" + _tmp * i +"\n";
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

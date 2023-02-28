@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+
+        var i;
+       
+        var count_one = 0;
+        var count_tow = 0;
+
+
+
+        for (i = 0; i <= 20; i++) {
+            var tmp = prompt("1~9까지의 숫자 20개입력");
+
+            switch (tmp) {
+                case "1":
+                case "3":
+                case "5":
+                case "7":
+                case "9":
+                    count_one++;
+                    break;
+
+                case "2":
+                case "4":
+                case "6":
+                case "8":
+                    count_tow++
+                    break;
+                default: alert("잘못 입력했습니다.");
+                    break;
+            }
+        }
+        document.write("홀수:"+count_one+","+"짝수"+count_tow);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+
+        var i;
+        var one = 0;
+        var two = 0;
+        var three = 0;
+        var four = 0;
+        var five = 0;
+        var six = 0;
+        var seven = 0;
+        var eight = 0;
+        var nine = 0;
+
+        for (i = 0; i <= 20; i++) {
+            var tmp = prompt("1~9까지의 숫자 20개입력");
+
+            switch (tmp) {
+                case "1":
+                    one++;
+                    break;
+                case "2":
+                    two++;
+                    break;
+                case "3":
+                    three++;
+                    break;
+                case "4":
+                    four++;
+                    break;
+                case "5":
+                    five++;
+                    break;
+                case "6":
+                    six++;
+                    break;
+                case "7":
+                    seven++;
+                    break;
+
+                case "8":
+                    eight++;
+                    break;
+                case "9":
+                    nine++;
+                    break;
+
+                default: alert("잘못 입력했습니다.");
+                    break;
+            }
+        }
+        document.write("1번째" + one + "<br>" + "2번째" + two + "<br>" + "3번째" + three + "<br>" + "4번째" + four + "<br>" + "5번째" + five + "<br>" +
+            "6번째" + six + "<br>" + "7번째" + seven + "<br>" + "8번째." + eight + "<br>" + "9번째" + nine);
+
+
+
+    </script>
+
+</body>
+
+</html>

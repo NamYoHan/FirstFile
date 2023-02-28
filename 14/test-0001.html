@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>구구단 - for문</title>
+	<link rel="stylesheet" href="css/gugudan.css">
+</head>
+
+<body>
+
+
+    <script>
+        var z = parseInt(prompt("입력받은값"));
+        var x, y;
+
+        for (x = 1; x <= z; x++) {
+            document.write("<div>")
+            document.write("<h2>" + x + "단" + "</h2>");
+            for (y = 1; y <= 9; y++) {
+                document.write(x + "X" + y + "=" + x * y + "<br>");
+                
+            }document.write("</div>")
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
