@@ -3,46 +3,70 @@
 <html lang="en">
 
 <style>
+    /* style.css에 있는 style 형식을 가져왓다.*/
     @import url("style.css");
 </style>
 
 <head>
+    <!--UTF-8 인코딩 방식으로 문자에 대해 어떻게 그려야할지 알려줌-->
     <meta charset="UTF-8">
+
+    <!--viewport로 화면표시영역을 지정해주고
+    initial-scale은 뷰포트의 초기 배율을 뜻하며 보이는 영역에서 웹페이지에 맞추기 위해 계산됨-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 브라우저 탭이름 Calculator로 설정 -->
     <title>Calculator</title>
+
 </head>
 
 <body>
     <main>
+    <!-- ac버튼, 연산자 버튼, = 버튼은 동작을 다르게 처리하기위해 
+         data-type 속성을 추가해 준다 -->
+
+        <!-- input = text타입으로 disabled를 사용함으로써 사용자가 클릭이나 사용을 못하게 만듦 -->
         <input type="text" disabled>
 
+        <!-- 블록타입 div로 묶고 클레스 이름이 button-wrap인 버튼을 만들었다. -->
+        <!-- 절차지향 방식이기에 계산기 버튼 순서대로 배치했다. -->
         <div class="button-wrap">
+
+        <!-- ac 클래스 추가 해줬다. -->
             <button data-type="ac" class="ac">AC</button>
+
+        <!--&divide;는 나눗셈 표시를 위한 html 토큰이다.-->
             <button data-type="operator">&divide;</button>
             <button>7</button>
             <button>8</button>
             <button>9</button>
 
+        <!--&times;는 곱셈 표시를 위한 html 토큰이다.-->
             <button data-type="operator">&times;</button>
             <button>4</button>
             <button>5</button>
             <button>6</button>
 
+    
             <button data-type="operator">-</button>
             <button>1</button>
             <button>2</button>
             <button>3</button>
-
             <button data-type="operator">+</button>
+
+        <!-- zero 클래스 추가 -->
             <button class="zero">0</button>
             <button>.</button>
+
+        <!-- = 버튼의 클래스 추가 -->
             <button data-type="equals" class="equals">=</button>
         </div>
 
 
-        
-        
+
+
     </main>
+    <!-- 현재 파일에 script.js 파일을 연결한다. -->
     <script src="script.js">
     </script>
 
